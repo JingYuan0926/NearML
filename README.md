@@ -1,40 +1,33 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# NearML
 
-## Getting Started
+We’re building a platform where anyone can collaborate to create and improve ML models collectively, enabling contributions from across the globe and empowering everyone to help shape a smarter, more open AI future.
 
-First, run the development server:
+# Introduction
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+At its core, every advanced AI system, from LLMs to AI agents, builds on machine learning (ML) models. By focusing on this fundamental layer, we are establishing the groundwork for truly collaborative AI. Our initial phase emphasizes standard ML, enabling distributed training across a global community. Over time, our platform will expand into more complex areas such as deep learning and Large Language Models (LLMs), all within a secure and decentralized environment. This approach ensures that the power of AI is accessible to everyone, not just large corporations.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Inspiration
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+I am a ML student who have personally experienced the challenges of obtaining sufficient GPU resources at a reasonable cost. NEAR’s fast and cost-effective infrastructure aligns with our goal of making AI more open, accessible, and decentralized. Motivated by positive feedback from NEAR’s DevRel team, we are determined to tackle the growing centralization controversy in the AI space, where even so-called "open-source" models can be locked behind restrictive barriers. Our mission is to truly democratize ML development, ensuring that open-source AI stays genuinely open and accessible to everyone.
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+# The Problem
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+The ML landscape is fragmented and heavily centralized. Giant tech companies often work behind closed doors, monopolizing both talent and computing resources for large-scale model training. This approach not only slows innovation but also makes it prohibitively expensive for smaller contributors to participate, as high-performance GPU resources remain costly and scarce.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+# The Solution
 
-## Learn More
+Our platform envisions a worldwide community of individuals, organizations, and enterprises pooling their computational resources to train shared ML models in a secure, privacy-preserving way. Here’s how it works:
 
-To learn more about Next.js, take a look at the following resources:
+- **Model and Dataset Splitting**  
+  We break down large ML models and datasets into smaller parts and distribute them across multiple users in the network.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
+- **Trusted Execution Environments (TEEs)**  
+  Each participant trains their assigned model slice privately within a TEE, ensuring that data remains confidential. The training data is never exposed; it is only securely fed into the TEE.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Secure Aggregation**  
+  After training, each participant’s updates are aggregated back on our platform, producing a unified, improved model.
 
-## Deploy on Vercel
+- **Transparent Governance and Rewards**  
+  By leveraging NEAR’s efficient smart contracts, contributors are fairly compensated for their computing power and data, while community-driven governance ensures equitable decision-making.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
+This collaborative approach significantly reduces costs, boosts accessibility, and accelerates innovation in ML. By staying aligned with NEAR’s AI vision, we aim to keep ML truly open, empowering a diverse global community to co-create the next generation of intelligent systems.
